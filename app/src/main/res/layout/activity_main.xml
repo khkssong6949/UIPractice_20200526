@@ -7,6 +7,13 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/Banksalad_logo"
+        android:scaleType="centerCrop"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,30 +36,11 @@
         android:hint="(숫자)비밀번호 입력"
         android:inputType="numberPassword"/>
 
-    <TextView
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="한줄 소개" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="한줄로 소개를 적어주세요"
-        android:singleLine="true"
-        />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="닉네임 검색" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="찾아볼 상대방의 닉네임"
-        android:singleLine="true"
-        android:imeOptions="actionSearch"
-        />
+        android:text="자동 로그인"
+        android:checked="true"/>
 
     <RadioGroup
         android:layout_width="match_parent"
@@ -82,16 +70,6 @@
         android:layout_height="wrap_content"
         android:text="로그인" />
 
-    <ImageButton
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:src="@mipmap/ic_launcher" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="자동 로그인"
-        android:checked="true"/>
 
 
 
